@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     
     // Game state
     public bool IsGameActive { get; private set; }
-    public float CurrentSpeed { get; private set; }
+    public float CurrentSpeed { get; set; }
     
     // Score
     private float currentScore = 0f;

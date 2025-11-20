@@ -14,7 +14,7 @@ public class InfiniteGround : MonoBehaviour
     private int currentTileIndex = 0;
     
     private void Start()
-    {
+    { 
         // Find player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)

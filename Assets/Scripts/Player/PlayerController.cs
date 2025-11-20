@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [Header("Lane Settings")]
     [SerializeField] private float laneDistance = 3f;
     [SerializeField] private int numberOfLanes = 3;
-    
+     
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius = 0.3f;

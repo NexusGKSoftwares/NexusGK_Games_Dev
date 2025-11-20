@@ -11,7 +11,7 @@ public class ObstacleMovement : MonoBehaviour
     private Transform playerTransform;
     
     private void Start()
-    {
+    { 
         // Find player
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
