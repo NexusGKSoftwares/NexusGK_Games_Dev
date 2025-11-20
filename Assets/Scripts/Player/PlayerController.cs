@@ -118,9 +118,10 @@ public class PlayerController : MonoBehaviour
     
     private void MoveForward()
     {
-        // Forward movement is handled by moving the world, but we can also move the player
-        // In an endless runner, typically the world moves around the player
-        float speed = GameManager.Instance != null ? GameManager.Instance.CurrentSpeed : forwardSpeed;
+        // In an endless runner, the player can stay in place or move forward slightly
+        // The world moves backward around the player
+        // For this implementation, we move the player forward slightly for camera positioning
+        float speed = GameManager.Instance != null ? GameManager.Instance.CurrentSpeed * 0.1f : forwardSpeed * 0.1f;
         transform.position += Vector3.forward * speed * Time.fixedDeltaTime;
     }
     
